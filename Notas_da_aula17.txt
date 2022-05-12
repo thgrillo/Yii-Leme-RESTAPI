@@ -1,0 +1,18 @@
+Requisição APi
+
+
+GET
+http://localhost:8888/api/default/<id>    -> traz o obj a partir do ID.
+http://localhost:8888/api/default/?fields=id,titulo,cabeça    -> traz o obj com os campos adicionados na req.
+
+POST
+http://localhost:8888/api/default/create  -> faz a criação de um obj, passar os dados no body da req
+
+PUT (update)
+http://localhost:8888/api/default/<id>  -> faz o update do obj, colocar no body o campo que quer atualizar e nova informação.
+
+DELETE
+http://localhost:8888/api/default/<id>  -> Deletar o registro
+
+
+DefaultController tem a função que define quais metodos são permitidos executar via API
